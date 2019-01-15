@@ -1,0 +1,11 @@
+h3>Create Artist</h3>
+
+<%= form_tag artists_path do %>
+    <label>Artist first name:</label><br>
+    <%= text_field_tag :'artist[name]' %><br>
+  
+    <label>Artist bio</label><br>
+    <%= text_area_tag :'artist[bio]' %><br>
+  
+    <%= submit_tag "Create Artist" %>
+  <% end %>
